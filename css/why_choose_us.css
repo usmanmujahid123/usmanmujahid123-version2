@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+.special1 {
+  float: left;
+  width: 50%;
+  background-color: #eded2200;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding bottom: 100px;
+  padding top: 100px;
+  max-width: 800px;
+  font-size: 30px;
+  color: red;
+}
+.special2 {
+  float: left;
+  width: 50%;
+  background-color: #ffffff00;
+  max-width: 800px;
+  height: 1000px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 800px){
+  .special1{
+    width: 100%;
+    font-size: 14px
+  }
+  .special2{
+    width: 100%;
+    font-size: 14px
+  }
+}
